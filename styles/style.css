@@ -1,0 +1,440 @@
+/**
+Общие стили для всего сайта
+*/
+*{
+    margin:0;
+    padding:0;
+  }
+h1
+{
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
+}
+h2
+{
+    font-size: 20px;
+}
+h3
+{
+    color: darkgreen;
+    font-size: 20px;
+}
+h1,
+h2,
+h3{
+    font-family: "Poppins", sans-serif;
+}
+h1,
+h2{
+    color: green;
+}
+button
+{
+    background-color: darkblue;
+    color: yellow;
+    border-radius: 50%;
+    height: 60px;
+    width: 250px;
+    font-size: 25px;
+    border: 1px solid yellow;
+
+    
+}
+button:hover{
+    background-color: lightgreen;
+    color: darkblue;
+}
+
+.text{
+    color:darkgreen;
+    font-size: 25px;
+    padding: 15px;
+    font-family: "Montserrat", sans-serif;
+    }
+
+/**
+Хэдер
+*/
+
+header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgb(2, 2, 21);
+        font-size: 15px;
+      }
+
+.menu {
+        flex-grow: 1;
+        margin-left: 400px;
+        padding: 30px;
+        text-decoration: none;
+        color: yellow;
+      }
+.menu ul {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+.menu li {
+        margin-right: 20px;
+      }
+.menu li:last-child {
+        margin-right: 0;
+      }
+.menu a {
+        padding: 8px 10px;
+        text-decoration: none;
+        color: yellow;
+        font-weight: 700;
+      }
+.header
+{
+    button
+    {
+        font-size: 15px;
+        height: 40px;
+        width: 150px;
+        margin-right: 40px;
+    } 
+}
+.header a{
+        text-decoration: none;
+        color:yellow;
+        font-weight: 700;
+}
+.logo
+{
+    width: 100px;
+    height: 100px;
+}
+
+/**
+Главная страница
+*/
+.main
+{
+    display: flex;
+    height: 600px;
+    
+}
+.main_text
+{
+    width: 70%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;    
+}
+.side_area
+{
+    width: 30%;
+    background-color: bisque;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.m_catalog
+{
+    display: flex;
+    text-align: center;
+    height: 250px;
+    border: 1px solid black;
+    margin: 30px;
+    flex-direction: row;
+}
+.m_things
+{
+    width: 50%;
+    background-color: aquamarine;
+    margin-right: 30px;
+}
+.m_pets
+{
+    width: 50%;
+    background-color: aquamarine;
+    
+}
+.m_advices
+{
+    background-color: rgb(235, 235, 172);
+    margin: 30px;
+    border: 1px solid black;
+    
+}
+.pic_thing
+{
+    height: 200px;
+    width: 200px;
+}
+.pic_animal
+{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+/**
+Футер
+*/
+.footer
+{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+.foot1,
+.foot2,
+.foot3,
+.foot4
+{
+    border: 1px solid black;
+    background-color: white;
+    height: 80%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**
+===Лист Галерея
+*/
+.header_gal {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    font-size: 15px;
+  }
+
+.menu_gal {
+    flex-grow: 1;
+    margin-left: 400px;
+    padding: 30px;
+    text-decoration: none;
+    color: darkblue;
+  }
+.menu_gal ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+.menu_gal li {
+    margin-right: 20px;
+  }
+.menu_gal li:last-child {
+    margin-right: 0;
+  }
+.menu_gal a {
+    padding: 8px 10px;
+    text-decoration: none;
+    color: darkblue;
+    font-weight: 700;
+  }
+
+.header_gal a{
+    text-decoration: none;
+    color:darkblue;
+    font-weight: 700;
+}
+.h1_gallery
+{
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Poppins';
+    color:darkblue;
+    text-align: center;
+}
+.h2_gallery
+{
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Poppins';
+    color:darkblue;
+    text-align: center;
+    margin: 20px;
+}
+/**
+===Слайдер
+*/
+.cssSlider {
+	display: block;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.cssSlider .slides {
+	overflow: hidden;
+	overflow: hidden;
+	width: 100%;
+	height: 70vmin;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.cssSlider .slides > li {
+	width: 100%;
+	height: 70vmin;
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+}
+.cssSlider .slides > li > img {
+	width: 100%;
+	height: 70vh;
+}
+/*
+Слайдер
+**/
+.cssSlider .thumbnails {
+	display: block;
+	position: relative;
+	padding: 0;
+	list-style: none;
+    margin: 10px;
+    color: darkblue;
+    font-family: "Poppins";
+    font-weight: 500;
+    text-align: center;
+}
+.cssSlider .thumbnails > li {
+	float: right;
+	width: 20%;
+}
+.cssSlider .thumbnails > li > a {
+	display: block;
+}
+.cssSlider .thumbnails > li > a > img {
+	width: 100%;
+	height: 20vh;
+}
+
+.cssSlider .slides li:target {
+	z-index: 3;
+	-webkit-animation: slide 1s 1;
+}
+.cssSlider .slides li:not(:target) {
+	-webkit-animation: hidden 1s 1;
+}
+@-webkit-keyframes slide {
+	0% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+}
+@keyframes slide {
+	0% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+}
+@-webkit-keyframes hidden {
+	0% {
+		z-index: 2;
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+	100% {
+		z-index: 2;
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+}
+@keyframes hidden {
+	0% {
+		z-index: 2;
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+	100% {
+		z-index: 2;
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+}
+/*
+Галерея существ
+**/
+.creatures1,
+.creatures2
+{
+    margin-bottom: 30px;
+    /*padding: 40px calc((100% - (255px * 3)) / 3);**/
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.creatures1 img
+{
+    width: 20vw;
+    height: 20vh;
+}
+.creatures2 img
+{
+    width: 20vw;
+    height: 20vh;
+}
+
+.creatures1 img:hover
+{
+    width: 50vw;
+    height: 50vh;
+}
+.creatures2 img:hover
+{
+    width: 50vw;
+    height: 50vh;
+}
+.potion img
+{
+    width: 15vw;
+    height: 30vh;
+}
+.potion
+{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(214, 202, 224);
+    height: 400px;
+}
+.love
+{
+    align-self:flex-end;
+    margin: 20px;
+}
+.trust
+{
+    align-self:center;
+}
+.goodluck
+{
+    margin: 20px;
+}
